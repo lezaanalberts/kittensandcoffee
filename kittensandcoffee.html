@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link
+          rel="icon"
+          href="images/kitty.png" 
+          type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+        <title>Kittens And Coffee</title>
+    </head>
+    <body>
+        <img class="logo" src="images/big-logo.png" alt="company logo">
+
+        <div class="aboutUs">
+            <h2>About Us:</h2>
+            <p>
+                Founded in 2015 by Sir Snuggles, Kittens and Coffee aims to help you break away from the busy world and simply settle down for a nice cup of coffee and some snuggles with our kitties.
+                We have worked with many non-profit organizations and animal shelters in the past decade, finding homes for all the fur babies you see in our cafe.
+                In the past 9 years, over 500 cats have been adopted through Kittens and Coffee. 
+            </p>
+        </div>
+
+        <div>
+            <h2 class="theTeam">Meet the team:</h2>
+            <div class="teamMember">
+                <span>
+                    <img class="members" src="images/founder.jpg" alt="our founder, Sir Snuggles">
+                </span>
+                <h3>Sir Snuggles</h3>
+                <p class="description">Founder</p>
+            </div>
+
+            <div class="teamMember">
+                <span>
+                    <img src="images/manager.jpg" alt="the manager, Mister Puffball">
+                </span>
+                <h3>Mister Puffball</h3>
+                <p class="description">Manager</p>
+            </div>
+
+            <div class="teamMember">
+                <span>
+                    <img src="images/accountant.jpg" alt="our accountant, Greg">
+                </span>
+                <h3>
+                    Greg
+                </h3>
+                <p class="description">
+                    Accountant
+                </p>
+            </div>
+
+            <div class="teamMember">
+                <span>
+                    <img src="images/agriculturist.jpg" alt="our agriculturist, Snowy">
+                </span>
+                <h3>
+                    Snowy
+                </h3>
+                <p class="description">
+                    Agriculturist
+                </p>
+            </div>
+            <div class="teamMember">
+                <span>
+                    <img src="images/employee1.jpg" alt="our employee, Bella">
+                
+                    <h3>
+                        Bella
+                    </h3>
+                    <p class="description">
+                        Employee
+                    </p>
+                </span>
+            </div>
+
+            <div class="teamMember">
+                <span>
+                    <img src="images/employee2.jpg" alt="our employee, Sasha">
+                
+                    <h3>
+                        Sasha
+                    </h3>
+                    <p class="description">
+                        Employee
+                    </p>
+                </span>
+            </div>
+
+            <div class="booking">
+                <h2>Make a booking today!</h2>
+                <div class="form">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="First Name..." required>
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name..." required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="emailaddress" placeholder="youremail@gmail.com" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="number" name="number" required>
+
+                        <label for="booking">When you want to book</label>
+                        <select id="booking" name="booking" required>
+                            <option value="select">Select</option>
+                            <option value="weekend">Weekends</option>
+                            <option value="weekdays">Weekdays</option>
+                            <option value="specific">Book specific date</option>
+                        </select>
+
+                        <label for="question">Questions and Enquiries</label>
+                        <textarea id="question" name="question" placeholder="if you have any questions or enquiries, write them here..." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="adoption-rate">
+            <canvas id="myChart" style="width:100%;max-width:700px">
+                
+            </canvas>
+        </div>
+
+
+        <div class="motto">
+            <blockquote>
+                <p>“If you cannot do great things, do small things in a great way.” —Napoleon Hill</p>
+            </blockquote>
+        </div>
+
+
+        <script>
+            var xValues = ["Jan", "Feb", "Mar", "Apr", "May","Jun","Jul","Aug"];
+            var yValues = [10, 15, 22, 24, 15, 27, 10, 20];
+            var barColors = [
+            "#f2f230",
+            "#c2f261",
+            "#91f291",
+            "#61f2c2",
+            "#FF499E",
+            "#E49AB0",
+            "#26547C",
+            "#79C7C5"
+            ];
+
+            new Chart("myChart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+                }]
+            },
+            options: {
+                title: {
+                display: true,
+                text: "adoption-rate for 2024"
+                }
+            }
+            });
+        </script>
+    </body>
+</html>

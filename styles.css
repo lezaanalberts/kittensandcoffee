@@ -1,0 +1,104 @@
+.logo{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+}
+
+h2{
+    margin: 10px 0 5px 0;
+}
+
+theTeam{
+    margin: 10px 0 0 0 0;
+}
+
+h2{
+    color:  rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+p{
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0 ;
+}
+
+p , h2 , h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.teamMember{
+    height: 170px;
+    display: inline-block;
+    align-content: center;
+    margin-top: 20px;
+    margin-left:20px;
+    width: max-content;
+    vertical-align: top;
+    margin: 5px 0 0 0;
+}
+
+.teamMember p{
+    font-weight: bold;
+}
+
+span img{
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+    
+}
+
+h3{
+    font-size: 18px;
+    margin: 0 0 0 0;
+}
+.description{
+    font-size: 14px;
+    
+}
+
+blockquote{
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight:700;
+}
+
+canvas{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/* css for the form */
+
+input[type=text],select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #3f1400;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #6e3d25;
+}
+
+.form{
+    border-radius: 5px;
+    background-color:#895237;
+    padding: 20px;
+    max-width: 750px;
+    height: auto;
+    margin-left: 30px;
+}
