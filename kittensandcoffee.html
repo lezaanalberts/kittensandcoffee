@@ -16,10 +16,10 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
         <div class="aboutUs">
             <h2>About Us:</h2>
-            <p>
-                Founded in 2015 by Sir Snuggles, Kittens and Coffee aims to help you break away from the busy world and simply settle down for a nice cup of coffee and some snuggles with our kitties.
-                We have worked with many non-profit organizations and animal shelters in the past decade, finding homes for all the fur babies you see in our cafe.
-                In the past 9 years, over 500 cats have been adopted through Kittens and Coffee. 
+            <p class="introduction">
+                Founded in 2014 by Sir Snuggles, Kittens and Coffee aims to help you break away from the busy world and simply settle down for a nice cup of coffee and some snuggles with our kittens.
+                We have worked with many non-profit organizations and animal shelters in the past decade, finding homes for all the fur babies you have seen in our cafe.
+                Currrently more than 1300 cats have been adopted through Kittens and Coffee. 
             </p>
         </div>
 
@@ -35,9 +35,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
             <div class="teamMember">
                 <span>
-                    <img src="images/manager.jpg" alt="the manager, Mister Puffball">
+                    <img src="images/manager.jpg" alt="the manager, Stewart">
                 </span>
-                <h3>Mister Puffball</h3>
+                <h3>Stewart</h3>
                 <p class="description">Manager</p>
             </div>
 
@@ -93,7 +93,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
             <div class="booking">
                 <h2>Make a booking today!</h2>
                 <div class="form">
-                    <form action="action_page.php">
+                    <form>
 
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="First Name..." required>
@@ -105,7 +105,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                         <input type="email" id="email" name="emailaddress" placeholder="youremail@gmail.com" required>
 
                         <label for="phone">Phone Number</label>
-                        <input type="number" id="number" name="number" required>
+                        <input type="tel" id="number" name="number" required>
 
                         <label for="booking">When you want to book</label>
                         <select id="booking" name="booking" required>
@@ -118,7 +118,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                         <label for="question">Questions and Enquiries</label>
                         <textarea id="question" name="question" placeholder="if you have any questions or enquiries, write them here..." style="height:200px"></textarea>
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" onclick="alert('Your response has been recorded.\nWe will be in contact soon!')">
 
                     </form>
                 </div>
