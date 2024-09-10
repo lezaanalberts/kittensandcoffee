@@ -1,3 +1,11 @@
+body{
+    background-color:#ccc;
+}
+
+h1,h2,h3,p{
+    color:#3f1400;
+}
+
 .logo{
     width: 100%;
     max-width: 700px;
@@ -9,12 +17,17 @@ h2{
     margin: 10px 0 5px 0;
 }
 
+.introduction{
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
 theTeam{
     margin: 10px 0 0 0 0;
 }
 
 h2{
-    color:  rgb(0, 0, 0);
     font-size: 20px;
 }
 
@@ -23,7 +36,7 @@ p{
     padding: 0 0 0 0 ;
 }
 
-p , h2 , h3{
+p , h2 , h3, .introduction{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .teamMember{
@@ -49,11 +62,13 @@ span img{
 }
 
 h3{
-    font-size: 18px;
-    margin: 0 0 0 0;
+    font-size: 17px;
+    margin: 0 10px 0 0;
+    text-align: left;
 }
 .description{
-    font-size: 14px;
+    font-size: 13px;
+    text-align: left;
     
 }
 
@@ -61,6 +76,7 @@ blockquote{
     margin-top: 30px;
     font-size: 22px;
     font-weight:700;
+    color:#3f1400;
 }
 
 canvas{
@@ -79,6 +95,7 @@ input[type=text],select,textarea{
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    color:#3f1400;
 }
 
 input[type=submit]{
@@ -101,4 +118,5 @@ input[type=submit]:hover{
     max-width: 750px;
     height: auto;
     margin-left: 30px;
+    color:#3f1400;
 }
